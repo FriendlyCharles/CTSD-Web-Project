@@ -53,3 +53,21 @@
 #TestFont-ListItem {
     font-family: montserratlight
 }
+
+.grid-container { //Added css by Kevin Keating to remain consitent with how the project is created
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-item { //Added css by Kevin Keating to remain consitent with how the project is created
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.grid-item iframe { //Added css by Kevin Keating to remain consitent with how the project is created
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
