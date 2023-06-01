@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Example</title>
+  <link rel="stylesheet" href="valencia.css">
+  
+</head>
+<body>
+	<div id="banner">
+    <div id="link-logo">
+    <input type="image" src="/Users/jade.boone/Documents/Valencia/CTSDlogo.png"/>
+    </div>
+  </div>
+
+  <h1><center>Software Development</h1>
+  
+  <div><p><center>A degree path focused on learning and acquiring software development skills. Students will gain experience on Java, C#, HTML, SQL and more within this degree path.</p></div>
+  <br>
+  <h2>Accomplishments</h2>
+  
+  <div class="embed-responsive"> <iframe width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+  
+  <h2>Additional Information</h2>
+  
+ <div class="embed-responsive"> <iframe width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+  
+  <h2>Contact</h2>
+  
+  <form action="submit_email.php" method="POST">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </form>
+
+</body>
