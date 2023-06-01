@@ -20,11 +20,11 @@
     </ul>
 </p>
     
-<h2 style = "background-color:#808080" id="TestFont-Header"> //Added my Kevin Keating
+<h2> //Added my Kevin Keating
     Accomplishments
 </h2>
 
-<div<div class="grid-container"> //Added by Kevin Keating, Videos will be in a grid layout to prevent large spots of white space
+<div class="grid-container"> //Added by Kevin Keating, Videos will be in a grid layout to prevent large spots of white space
     <div class="grid-item">
       <iframe src= https://www.youtube.com/embed/lQzP2N2WlpA></iframe>
     </div>
