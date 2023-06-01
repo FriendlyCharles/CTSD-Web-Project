@@ -3,7 +3,7 @@
 @font-face {
     font-family: 'montserratbold';
     src: url('fonts/montserrat-bold-webfont.woff2') format('woff2'),
-         url('fonts/montserrat-bold-webfont.woff') format('woff');
+    url('fonts/montserrat-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -11,7 +11,7 @@
 @font-face {
     font-family: 'montserratregular';
     src: url('fonts/montserrat-regular-webfont.woff2') format('woff2'),
-         url('fonts/montserrat-regular-webfont.woff') format('woff');
+    url('fonts/montserrat-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -19,7 +19,7 @@
 @font-face {
     font-family: 'montserratblack';
     src: url('fonts/montserrat-black-webfont.woff2') format('woff2'),
-         url('fonts/montserrat-black-webfont.woff') format('woff');
+    url('fonts/montserrat-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -27,7 +27,7 @@
 @font-face {
     font-family: 'montserratlight';
     src: url('fonts/montserrat-light-webfont.woff2') format('woff2'),
-         url('fonts/montserrat-light-webfont.woff') format('woff');
+    url('fonts/montserrat-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -35,7 +35,7 @@
 @font-face {
     font-family: 'montserratitalic';
     src: url('fonts/montserrat-italic-webfont.woff2') format('woff2'),
-         url('fonts/montserrat-italic-webfont.woff') format('woff');
+    url('fonts/montserrat-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -54,81 +54,25 @@
     font-family: montserratlight
 }
 
-.grid-container { //Added css by Kevin Keating to remain consitent with how the project is created
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); //Grid layout is created with 2 columns in mind
-  gap: 20px;
+.Home-Icon img{
+    width: 25em;
+    height: auto;
 }
 
-.grid-item { //Added css by Kevin Keating to remain consitent with how the project is created
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); //Grid layout is created with 2 columns in mind
+gap: 20px;
 }
 
-.grid-item iframe { //Added css by Kevin Keating to remain consitent with how the project is created
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.grid-item {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
 }
 
-/*
-This section added by Quang Vu
-Date: 05-31-2023
-START HERE
-*/
-
-
-/* Reset default browser styles */
-html, body {
-    margin: 0;
-    padding: 0;
-  }
-
-/* Body styles */
-body {
-    background-color: white;
-    color: black;
-    font-family: Arial, sans-serif;
-    font-size: 1.5em;
-    line-height: 1.5; 
-  }
-  
-/* Headings styles */
-h1, h2, h3, h4, h5, h6 {
-background-color: dimgrey;
-font-size: 1.5em;
-line-height: 1.2;
-color: black;
-text-align: left;
+.grid-item iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
-  
-/* Form styles */
-form {
-font-size: 1em;
-line-height: 1.5;
-}
-
-/* List styles */
-ul, ol {
-font-size: 1em;
-line-height: 1.5;
-}
-
-/* Table styles */
-table {
-font-size: 1em;
-line-height: 1.5;
-}
-
-/* Paragraph styles */
-p {
-font-size: 1em;
-line-height: 1.5;
-}
-
-/*
-This section added by Quang Vu
-Date: 05-31-2023
-END HERE
-*/
