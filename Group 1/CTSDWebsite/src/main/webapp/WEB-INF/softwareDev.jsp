@@ -3,40 +3,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>CTSD Website Destination!</title>
-<link href="../../softwareDev.css" rel="stylesheet" type="text/css">
+    <meta charset="ISO-8859-1">
+    <title>CTSD Website Destination!</title>
+    <link href="softwareDev.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<!-- Home button with image -->
+<div class="Home-Icon">
+    <a href="softwareDev.jsp">
+        <img src="images\Primary\Web\VC-Primary-Web.png" alt="Home">
+    </a>
+</div>
+
 <h2 id="TestFont-Header">
     Testing the font header
 </h2>
 
 <p id="TestFont-Body">
     Testing the font body.
-    <ul id="TestFont-ListItem">
-        <li>Test 1</li>
-        <li>Test 2</li>
-    </ul>
+<ul id="TestFont-ListItem">
+    <li>Test 1</li>
+    <li>Test 2</li>
+</ul>
 </p>
-    
-<h2> //Added my Kevin Keating
+
+<h2 style = "background-color:#808080" id="TestFont-Header"> //Added my Kevin Keating
     Accomplishments
 </h2>
 
-<div class="grid-container"> //Added by Kevin Keating, Videos will be in a grid layout to prevent large spots of white space
+<div<div class="grid-container"> //Added by Kevin Keating, Videos will be in a grid layout to prevent large spots of white space
     <div class="grid-item">
-      <iframe src= https://www.youtube.com/embed/lQzP2N2WlpA></iframe>
+        <iframe src= https://www.youtube.com/embed/lQzP2N2WlpA></iframe>
     </div>
     <div class="grid-item">
-      <iframe src="https://www.youtube.com/embed/Video-ID-2"></iframe>
+        <iframe src="https://www.youtube.com/embed/Video-ID-2"></iframe>
     </div>
     <div class="grid-item">
-      <iframe src="https://www.youtube.com/embed/Video-ID-3"></iframe>
+        <iframe src="https://www.youtube.com/embed/Video-ID-3"></iframe>
     </div>
     <div class="grid-item">
         <iframe src="https://www.youtube.com/embed/Video-ID-4"></iframe>
     </div>
-  </div>
+</div>
 </body>
 </html>
