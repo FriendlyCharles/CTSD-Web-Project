@@ -1,0 +1,26 @@
+body {
+  margin: 20px;
+}
+
+#banner{
+  max-height: 250px;
+  background-image: url(/Users/jade.boone/Documents/Valencia/bg-interior.jpg);
+}
+
+h1{
+  font-family: 'montserratbold';
+  src: url('fonts/montserrat-bold-webfont.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+h2{
+  background-color: grey;
+  padding: 10px;
+  width: 50%;
+  font-family: 'montserratbold';
+  src: url('fonts/montserrat-bold-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;
+}
