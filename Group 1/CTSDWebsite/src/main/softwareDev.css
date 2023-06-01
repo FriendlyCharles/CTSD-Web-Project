@@ -71,3 +71,64 @@
   width: 100%;
   height: 100%;
 }
+
+/*
+This section added by Quang Vu
+Date: 05-31-2023
+START HERE
+*/
+
+
+/* Reset default browser styles */
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+/* Body styles */
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5; 
+  }
+  
+/* Headings styles */
+h1, h2, h3, h4, h5, h6 {
+background-color: dimgrey;
+font-size: 1.5em;
+line-height: 1.2;
+color: black;
+text-align: left;
+}
+  
+/* Form styles */
+form {
+font-size: 1em;
+line-height: 1.5;
+}
+
+/* List styles */
+ul, ol {
+font-size: 1em;
+line-height: 1.5;
+}
+
+/* Table styles */
+table {
+font-size: 1em;
+line-height: 1.5;
+}
+
+/* Paragraph styles */
+p {
+font-size: 1em;
+line-height: 1.5;
+}
+
+/*
+This section added by Quang Vu
+Date: 05-31-2023
+END HERE
+*/
