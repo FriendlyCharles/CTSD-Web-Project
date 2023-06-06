@@ -1,3 +1,4 @@
+/*Formats the buttons.*/
 button {
     background-color: #bf311a;
     border-color: #bf311a;
@@ -6,4 +7,43 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+}
+
+/*Formats the links in the page navigation bar.*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ece9ea;
+}
+
+/*Formats the links in the page navigation bar.*/
+li {
+    float: left;
+    text-align:center;
+}
+
+/*Formats the links in the page navigation bar.*/
+li a {
+    display: block;
+    color: #bf311a;
+    text-align: center;
+    padding: 16px;
+    text-decoration: underline; /* underline is the default, but I want to be sure this element is underlined. */
+}
+
+/*TODO: Figure out how to use the ::after tag to add the '>' after a link in the navigation ribbon.*/
+
+body {
+    background-color: #bf311a;
+}
+
+/**/
+div {
+    background-color: #fff;
+}
+
+#infoBar {
+    background-color: #fdb913;
 }
