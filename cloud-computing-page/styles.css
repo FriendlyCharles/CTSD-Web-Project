@@ -34,7 +34,7 @@ li a {
 
 /*TODO: Figure out how to use the ::after tag to add the '>' after a link in the navigation ribbon.*/
 
-body {
+body, .logo {
     background-color: #bf311a;
 }
 
@@ -45,4 +45,17 @@ div {
 
 #infoBar {
     background-color: #fdb913;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    align-self: center;
 }
