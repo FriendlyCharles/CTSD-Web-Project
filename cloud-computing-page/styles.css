@@ -43,7 +43,7 @@ div {
     background-color: #fff;
 }
 
-#infoBar {
+#infoBar, #infoBar div {
     background-color: #fdb913;
 }
 
