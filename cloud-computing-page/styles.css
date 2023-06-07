@@ -11,7 +11,7 @@ button {
 
 /*Formats the links in the page navigation bar.*/
 ul {
-    list-style-type: none;
+    list-style-type:none;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -21,7 +21,6 @@ ul {
 /*Formats the links in the page navigation bar.*/
 li {
     float: left;
-    text-align:center;
 }
 
 /*Formats the links in the page navigation bar.*/
