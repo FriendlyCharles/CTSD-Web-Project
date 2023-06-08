@@ -1,36 +1,37 @@
 <!DOCTYPE html>
+</html>A<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>Cloud Computing Track</title>
-    </head>
-    <body> 
-        <div class="container">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <title>Cloud Computing Track</title>
+</head>
+<body>
+    <div class="container">
         <div class="logo">
-            <img src="../assets/images/VC-Primary-Coated-4c.jpg" width="300px"><h3>Computing Technology and Software Development</h3>
+            <img src="../assets/images/VC-Primary-Coated-4c.jpg" width="300px">
+            <h3>Computing Technology and Software Development</h3>
         </div>
 
         <h1>Cloud Computing Concentration</h1>
-        
+
         <div>
             <ul>
                 <li>
                     <a href="https://catalog.valenciacollege.edu/degrees/bachelorofscience/computingtechnologyandsoftwaredesign/">BASCTSD</a>
                 </li>
                 <li>
-                    <p>Computing Concentration</p> <!-- TODO: Is there a way to get this to align without using the <p> tags? -->
+                    <p>Computing Concentration</p>
                 </li>
             </ul>
-            
-            <!-- <h4> > Cloud Computing Concentration</h4> -->
         </div>
 
-        <div> <!--div so that it seperates the colors for that area-->
+        <div>
             <p>
-                In Valencia's BASCTSD Cloud Computing concentration, students will learn how to leverage the power of cloud compiting to...
+                In Valencia's BASCTSD Cloud Computing concentration, students will learn how to leverage the power of cloud computing to...
             </p>
             <p>
                 Required classes include...
@@ -39,40 +40,69 @@
 
         <div id="infoBar">
             <p>
-                Have questions?        
+                Have questions?
             </p>
-                <div>
+            <div>
                 <button>READ OUR FAQ</button>
                 <p>
                     or
                 </p>
                 <button class="button" href="infoRequest.html">REQUEST INFORMATION</button>
-            </div> <!--div so that the layout only applies to that area-->
+            </div>
         </div>
 
-        <!--div so that  the background is the same color-->
         <div>
             <h3>Student Projects</h3>
 
-            <!--Card element 1-->
-            <div>
-                <img src="../assets/images/Project_Sample.jpg" height="150px" width="150px"> 
-                <h4>Project 1</h4>
-                <p>
-                    Short description goes here
-                </p>
-                <button>LEARN MORE</button>
+            <div id="projectSlider">
+                <div>
+                    <img src="../assets/images/Project_Sample.jpg" height="150px" width="150px">
+                    <h4>Project 1</h4>
+                    <p>
+                        Short description goes here
+                    </p>
+                    <button>LEARN MORE</button>
+                </div>
+
+                <div>
+                    <img src="../assets/images/Project_Sample.jpg" height="150px" width="150px">
+                    <h4>Project 2</h4>
+                    <p>
+                        Short description goes here
+                    </p>
+                    <button>LEARN MORE</button>
+                </div>
+
+                <div>
+                    <img src="../assets/images/Project_Sample.jpg" height="150px" width="150px">
+                    <h4>Project 3</h4>
+                    <p>
+                        Short description goes here
+                    </p>
+                    <button>LEARN MORE</button>
+                </div>
             </div>
-            <!--end card element 1-->
-
-            <!--Card element 2-->
-
-            <!--end card element 2-->
-
-            <!--Card element 3-->
-
-            <!--end card element 3--> 
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#projectSlider').slick({
+                dots: false,
+                infinite: true,
+                prevArrow: false,
+                nextArrow: false,
+                autoPlay: true,
+                speed: 500,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+        
+    </script>
 </body>
 </html>
