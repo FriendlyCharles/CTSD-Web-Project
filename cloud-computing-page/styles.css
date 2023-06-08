@@ -10,7 +10,7 @@ button {
 }
 
 /*Formats the links in the page navigation bar.*/
-ul {
+.navBar {
     list-style-type:none;
     margin: 0;
     padding: 0;
@@ -19,12 +19,12 @@ ul {
 }
 
 /*Formats the links in the page navigation bar.*/
-li {
+.navBarElement {
     float: left;
 }
 
 /*Formats the links in the page navigation bar.*/
-li a {
+.navBarLink {
     display: block;
     color: #bf311a;
     text-align: center;
