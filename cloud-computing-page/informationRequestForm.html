@@ -1,45 +1,113 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <title>Information Request Form</title>
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <title>Information Request Form</title>
+    <link rel="stylesheet" type="text/css" href="styles-form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header goes here -->
+    <div class="form-pretext">
         <p>
             Please enter your contact information in the form below. After clicking 
             submit, your email client will open with a formatted email ready to be 
             sent to Dr. Macon. Simply send the email and you will receive information 
             on the program in 3-5 business days.
         </p>
-        <form action="mailto:lmacon@valenciacollege.edu">
-            <label for="firstName">First name:</label>
-            <br>
-            <input type="text" id="firstName" name="firstName">
-            <br>
-            <label for="lastName">Last name:</label>
-            <br>
-            <input type="text" id="lastName" name="lastName">
-            <br>
-            <label for="phoneNumber">Preferred Phone Number:</label>
-            <br>
-            <input type="text" id="phoneNumber" name="phoneNumber">
-            <br>
-            <label for="emailAddress">Email Address:</label>
-            <br>
-            <input type="text" id="emailAddress" name="emailAddress">
-            <br>
-            <label for="schoolYear">Year of Study:</label>
-            <br>
-            <input type="text" id="schoolYear" name="schoolYear">
-            <br>
-            <label for="degreePath">Degree Path:</label>
-            <br>
-            <input type="text" id="degreePath" name="degreePath">
-            <br>
-            <label for="desiredOutcome">Desired Outcome or Desired Job:</label>
-            <br>
-            <input type="text" id="desiredOutcome" name="desiredOutcome">
-            <br>
-            <input type="submit" value="Submit">
-          </form>
-    </body>
+    </div>
+    <!-- WIP Form Submission Functionality-->
+    <div class="form-container">
+        <h1>Information Request Form</h1>
+        <form>
+            <div class="form-group">
+                <label for="firstName">First Name <span style="color: red">*</span></label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name <span style="color: red">*</span></label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Preferred Phone Number <span style="color: red">*</span></label>
+                <input type="text" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address <span style="color: red">*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="schoolYear">Year of Study <span style="color: red">*</span></label>
+                <select id="schoolYear" name="schoolYear" required>
+                    <option value="" disabled selected>Please select...</option>
+                    <option value="freshman">Freshman</option>
+                    <option value="sophomore">Sophomore</option>
+                    <option value="junior">Junior</option>
+                    <option value="senior">Senior</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <!-- https://catalog.valenciacollege.edu/degrees/associateinarts/degreepathways/ -->
+                <label for="degreePath">Degree Pathway <span style="color: red">*</span></label>
+                <select id="degreePath" name="degreePath" size="4" selected="false" required>
+                    <option value="accounting">Accounting</option>
+                    <option value="advertising">Advertising/Public Relations</option>
+                    <option value="architecture">Architecture</option>
+                    <option value="art">Art, Studio/Fine Art</option>
+                    <option value="biology">Biology</option>
+                    <option value="biomedical-science">Biomedical Science</option>
+                    <option value="business">Business</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="communication">Communication</option>
+                    <option value="computer-science">Computer Science</option>
+                    <option value="criminal-justice">Criminal Justice</option>
+                    <option value="dance-performance">Dance Performance</option>
+                    <option value="dietetics">Dietetics (UF CALS)</option>
+                    <option value="digital-media">Digital Media</option>
+                    <option value="early-childhood-education">Early Childhood Education</option>
+                    <option value="economics">Economics</option>
+                    <option value="elementary-education">Elementary Education</option>
+                    <option value="emerging-media">Emerging Media</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="english">English</option>
+                    <option value="environmental-management">Environmental Management (UF CALS)</option>
+                    <option value="environmental-studies">Environmental Studies</option>
+                    <option value="exploratory">Exploratory</option>
+                    <option value="film">Film</option>
+                    <option value="food-science">Food Science (UF CALS)</option>
+                    <option value="health-informatics">Health Informatics and Information Management</option>
+                    <option value="history">History</option>
+                    <option value="horticultural-science">Horticultural Science</option>
+                    <option value="information-technology">Information Technology</option>
+                    <option value="journalism">Journalism</option>
+                    <option value="mathematics">Mathematics</option>
+                    <option value="music-performance">Music Performance</option>
+                    <option value="natural-resource-conversation">Natural Resource Conversation (UF CALS)</option>
+                    <option value="nutritional-sciences">Nutritional Sciences (UF CALS)</option>
+                    <option value="philosophy">Philosophy</option>
+                    <option value="physical-education">Physical Education</option>
+                    <option value="physics">Physics</option>
+                    <option value="plant-science">Plant Science (UF CALS)</option>
+                    <option value="political-science">Political Science</option>
+                    <option value="psychology">Psychology</option>
+                    <option value="public-administration">Public Administration</option>
+                    <option value="secondary-education">Secondary Education</option>
+                    <option value="sign-language-interpretation">Sign Language Interpretation</option>
+                    <option value="social-sciences">Social Sciences</option>
+                    <option value="social-work">Social Work</option>
+                    <option value="sociology">Sociology</option>
+                    <option value="statistics">Statistics</option>
+                    <option value="theatre">Theatre</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="desiredOutcome">Desired Outcome or Job</label>
+                <input type="text" id="desiredOutcome" name="desiredOutcome">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <!-- WIP Footer-->
+    </div>
+</body>
 </html>
