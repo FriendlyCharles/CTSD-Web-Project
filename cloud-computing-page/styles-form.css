@@ -1,5 +1,10 @@
 body{
+    margin: 0;
     font-family: Montserrat, sans-serif; 
+}
+
+a {
+    color: inherit;
 }
 
 .form-pretext {
@@ -46,4 +51,30 @@ button[type="submit"] {
     color: #fff;
     border: none;
     cursor: pointer;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 30px 0px 15px;
+    background-color: #414042;
+    /* flex properties */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* text properties */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.7;
+} 
+
+.footer-column {
+    max-width: 40vw;
+    border-right: 1px solid #fff;
+    padding-right: 15px;
+}
+
+.footer-column2 {
+    padding-left: 15px;
 }
