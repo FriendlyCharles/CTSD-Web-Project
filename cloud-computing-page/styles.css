@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 /*Formats the buttons.*/
 button {
     background-color: #bf311a;
@@ -7,6 +11,10 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+}
+
+a {
+    color: inherit;
 }
 
 /*Formats the links in the page navigation bar.*/
