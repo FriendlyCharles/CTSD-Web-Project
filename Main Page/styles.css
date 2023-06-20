@@ -17,3 +17,12 @@ h3 a.compcolor {
 h3 a.devcolor {
     color:#bf311a;
 }
+
+.card-img-top {
+    width: 30vw;
+    height: 47vh;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+}
