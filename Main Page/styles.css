@@ -26,3 +26,13 @@ h3 a.devcolor {
     overflow: hidden;
     margin: 0;
 }
+
+div.path-info {
+    position: relative;
+}
+
+div.overlay {
+    z-index: 1;
+    width: 80%;
+    color:white;
+}
