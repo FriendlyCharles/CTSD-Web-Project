@@ -3,22 +3,81 @@
 <head>
     <title>Information Request Form</title>
     <link rel="stylesheet" type="text/css" href="styles-form.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-<!-- Header goes here -->
-    <div class="form-pretext">
-        <p>
-            Please enter your contact information in the form below. After clicking 
-            submit, your email client will open with a formatted email ready to be 
-            sent to Dr. Macon. Simply send the email and you will receive information 
-            on the program in 3-5 business days.
-        </p>
-    </div>
+    <header>
+        <div class="logo">
+            <img src="../../assets/images/VC-Primary-Coated-4c.jpg" width="300px">
+            <span>Information Request Form</span>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="navbar-container">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="https://catalog.valenciacollege.edu/degrees/bachelorofscience/computingtechnologyandsoftwaredesign/"
+                        >Valencia BAS</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <div class="form-container">
-        <h1>Information Request Form</h1>
+        <h1>Information Request 
+            <span class="ms-2">
+                <img src="../../assets/icons/32px-Infobox_info_icon.svg.png" 
+                    alt="tooltip-icon" 
+                    data-bs-toggle="tooltip" 
+                    data-bs-placement="top"
+                    title="Please fill out your contact using the form.
+                    The information will automatically be sent to Dr. Macon after clicking submit.
+                    Expect up to 3-5 business days to receive further information on the program."
+                >
+            </span>
+            <script>
+                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                    return new bootstrap.Tooltip(tooltipTriggerEl)
+                })
+            </script>
+        </h1>
         <form method="post" action="send.php">
             <div class="form-group">
                 <label for="firstName">First Name <span style="color: red">*</span></label>

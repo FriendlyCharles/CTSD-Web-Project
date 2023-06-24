@@ -4,29 +4,45 @@ body{
 }
 
 a {
-    color: inherit;
-}
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
-}
-.form-pretext {
-    max-width: 700px;
-    margin: auto;
-    text-align: justify;
+    color: inherit !important;
 }
 
+/***** 
+HEADER 
+*****/
+.logo {
+    background-color: #c0342e;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo span {
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: #eee;
+}
+
+.navbar-container {
+    float: left;
+    padding-left: 2%;
+}
+
+/***** 
+FORM 
+*****/
 .form-container {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px 50px 50px 50px;
     border: 1px solid #c1c1c1;
 }
 
 .form-container h1 {
-    margin-top: 0;
+    margin: 0;
+    padding-bottom: 3%;
+    font-size: 28px;
+    text-align: center;
 }
 
 .form-group {
@@ -58,6 +74,9 @@ button[type="submit"] {
     cursor: pointer;
 }
 
+/***** 
+FOOTER
+*****/
 footer {
     margin-top: 50px;
     padding: 30px 0px 15px;
@@ -83,3 +102,4 @@ footer {
 .footer-column2 {
     padding-left: 15px;
 }
+
