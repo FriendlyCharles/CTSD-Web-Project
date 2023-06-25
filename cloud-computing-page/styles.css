@@ -1,97 +1,39 @@
-body {
-    margin: 0;
-}
-
-/*Formats the buttons.*/
-button {
-    background-color: #bf311a;
-    border-color: #bf311a;
-    color: #fff;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
-
-a {
-    color: inherit;
-}
-
-/*Formats the links in the page navigation bar.*/
-.navBar {
-    list-style-type:none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ece9ea;
-}
-
-/*Formats the links in the page navigation bar.*/
-.navBarElement {
-    float: left;
-}
-
-/*Formats the links in the page navigation bar.*/
-.navBarLink {
-    display: block;
-    color: #bf311a;
-    text-align: center;
-    padding: 16px;
-    text-decoration: underline; /* underline is the default, but I want to be sure this element is underlined. */
-}
-
-/*TODO: Figure out how to use the ::after tag to add the '>' after a link in the navigation ribbon.*/
-
-body, .logo {
-    background-color: #bf311a;
-}
-
-/**/
-div {
-    background-color: #fff;
-}
-
-#infoBar, #infoBar div {
-    background-color: #fdb913;
-}
-
-.container{
-    width: 80%;
-    margin: auto;
-}
-
-.logo {
-    display: flex;
-}
-
 .logo img {
-    align-self: center;
-}
+    width: 100%;
+  }
+  .CCC {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
 
-footer {
-    margin-top: 50px;
-    padding: 30px 0px 15px;
-    background-color: #414042;
-    /* flex properties */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* text properties */
-    font-family: Arial, sans-serif;
+  footer {
+    font-size: small;
+    padding-top: 10%;
+    text-align: center;
+  }
+
+  li a.classlinks:hover {
+    color: #fdb913;
+  }
+  
+  li .classlinks {
+    color: #bf311a;
+  }
+
+  .request-block{
+    margin-top: 5%;
+  }
+  
+  .request-button {
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+    padding: 10px 20px;
+    font-size: 14px;
     font-weight: bold;
-    font-size: 12px;
+    background-color: #bf311a;
     color: #fff;
-    line-height: 1.7;
-} 
-
-.footer-column {
-    background-color: #414042;
-    max-width: 40vw;
-    border-right: 1px solid #fff;
-    padding-right: 15px;
+    border: none;
+    cursor: pointer;
+    
 }
-
-.footer-column2 {
-    background-color: #414042;
-    padding-left: 15px;
-}
+  

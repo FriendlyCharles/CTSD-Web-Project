@@ -6,29 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <title>Cloud Computing Track</title>
 </head>
 <body>
-    <div class="container">
+    <header>
         <div class="logo">
-            <img src="../assets/images/VC-Primary-Coated-4c.jpg" width="300px">
-            <h3>Computing Technology and Software Development</h3>
+          <img src="/Main Page/logo.jpg" alt="Valencia College Logo" />
         </div>
-
-        <h1>Cloud Computing Concentration</h1>
-
-        <div>
-            <ul class="navBar">
-                <li class="navBarElement">
-                    <a class="navBarLink" href="https://catalog.valenciacollege.edu/degrees/bachelorofscience/computingtechnologyandsoftwaredesign/">BASCTSD</a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="https://catalog.valenciacollege.edu/degrees/bachelorofscience/computingtechnologyandsoftwaredesign/"
+                    >Valencia BAS</a
+                  >
                 </li>
-                <li class="navBarElement">
-                    <p>Computing Concentration</p>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Programs</a>
                 </li>
-            </ul>
-        </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Courses</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Admissions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
 
+    <main class="container">
         <div>
+            
+            <h1 class="CCC">
+                Cloud Computing Concentration
+              </h1>
             <p>
                 <!-- The following is from the Valencia website. -->
                 The Cloud Computing concentration is designed to help students excel in cloud computing in the areas of architecting, development, and systems administration. Project-based courses allow students to apply industry practices and prepare students for a career in the cloud field. Students will gain experience through critical thinking, problem solving, teamwork and communication of ideas. 
@@ -39,98 +76,55 @@
             <p>
                 Concentration-specific classes include:
             </p>
-            <ul>
+            
+
                 <li>
-                    <a class="classTitle" href="/cloud-computing-page/class-pages/cloud-management-and-design.html">CIS 3083C Cloud Management and Design</a>
+                    <a class="classlinks" href="/cloud-computing-page/class-pages/cloud-management-and-design.html">CIS 3083C Cloud Management and Design</a>
                 </li>
                 <li>
-                    CIS 3080C Cloud Administrator Essentials
+                    <a class="classlinks" href=""> CIS 3080C Cloud Administrator Essentials</a>
                 </li>
                 <li>
-                    CIS 3641 Cloud Developer Essentials
+                    <a class="classlinks" href=""> CIS 3641 Cloud Developer Essentials</a>
                 </li>
                 <li>
-                    CIS 3652 Cloud Data Analytics Essentials
+                    <a class="classlinks" href=""> CIS 3652 Cloud Data Analytics Essentials</a>
                 </li>
                 <li>
-                    CTS 3700 Data Center Operations Essentials
+                    <a class="classlinks" href=""> CTS 3700 Data Center Operations Essentials</a>
                 </li>
                 <li>
-                    CAP 3612 Machine Learning Essentials
+                    <a class="classlinks" href=""> CAP 3612 Machine Learning Essentials</a>
                 </li>
-            </ul>
+          
+           
         </div>
 
-        <div id="infoBar">
+        <div class="request-block">
             <p>
                 Have questions?
             </p>
-            <div>
-                <a href="informationRequestForm.html">REQUEST INFORMATION</a>
+            <div >
+                <a class="request-button"href="/cloud-computing-page/information-request-form/information-request-form.html">REQUEST INFORMATION</a>
             </div>
         </div>
 
-        <div>
-            <h3>Student Projects</h3>
 
-            <div id="projectSlider">
-                <div>
-                    <img src="../assets/images/Project_Sample.jpg" height="150px" width="150px">
-                    <h4>Project 1</h4>
-                    <p>
-                        Short description goes here
-                    </p>
-                    <button>LEARN MORE</button>
-                </div>
-
-                <div>
-                    <img src="../assets/images/Project_Sample.jpg" height="150px" width="150px">
-                    <h4>Project 2</h4>
-                    <p>
-                        Short description goes here
-                    </p>
-                    <button>LEARN MORE</button>
-                </div>
-
-                <div>
-                    <img src="../assets/images/Project_Sample.jpg" height="150px" width="150px">
-                    <h4>Project 3</h4>
-                    <p>
-                        Short description goes here
-                    </p>
-                    <button>LEARN MORE</button>
-                </div>
-            </div>
-        </div>
     </div>
+    </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#projectSlider').slick({
-                dots: false,
-                infinite: true,
-                prevArrow: false,
-                nextArrow: false,
-                autoPlay: true,
-                speed: 500,
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-            });
-        });
-        
-    </script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"
+    ></script>
+
     <footer>
         <div class="footer-column">
             <p>
             Valencia College provides equal opportunity for educational opportunities and employment to all.
             Contact the <a href="https://valenciacollege.edu/employees/human-resources/" target="_blank">Office of Organizational Development and Human Resources</a> for information.
             </p>
-        </div>
-        <div class="footer-column2">
             <p>
             P.O. Box 3028, Orlando, Florida 32802<br>
             407-299-5000<br>
