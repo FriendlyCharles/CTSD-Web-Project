@@ -1,0 +1,38 @@
+.logo img {
+  width: 100%;
+}
+
+.CCC {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+footer {
+  font-size: small;
+  padding-top: 10%;
+  text-align: center;
+}
+
+li a.classlinks:hover {
+  color: #fdb913;
+}
+
+li .classlinks {
+  color: #bf311a;
+}
+
+.request-block {
+  margin: 5% 0;
+}
+
+.request-button {
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #bf311a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
