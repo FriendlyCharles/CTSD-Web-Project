@@ -21,9 +21,13 @@ h3 a.compcolor:hover {
   color: #bf311a;
 }
 
+.card {
+  padding-bottom: 50px;
+}
+
 .card-img-top {
   width: 30vw;
-  height: 47vh;
+  align-self: center;
   position: relative;
   display: inline-block;
   overflow: hidden;
