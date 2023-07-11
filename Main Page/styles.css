@@ -1,3 +1,13 @@
+@import "https://use.typekit.net/cmk3ebk.css";
+
+* {
+  font-family: "adobe-garamond-pro", serif;
+}
+
+a {
+  font-family: Montserrat, sans-serif;
+}
+
 .logo img {
   width: 100%;
 }
