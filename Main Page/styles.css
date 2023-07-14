@@ -1,10 +1,15 @@
 @import "https://use.typekit.net/cmk3ebk.css";
 
-* {
+html * {
   font-family: "adobe-garamond-pro", serif;
+  font-size: medium;
 }
 
 a {
+  font-family: Montserrat, sans-serif;
+}
+
+.descr-text {
   font-family: Montserrat, sans-serif;
 }
 
@@ -24,11 +29,13 @@ footer p {
 h3 a.compcolor,
 h3 a.devcolor:hover {
   color: #fdb913;
+  font-size: larger;
 }
 
 h3 a.devcolor,
 h3 a.compcolor:hover {
   color: #bf311a;
+  font-size: larger;
 }
 
 .card {

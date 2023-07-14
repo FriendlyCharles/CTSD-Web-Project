@@ -1,7 +1,8 @@
 @import "https://use.typekit.net/cmk3ebk.css";
 
-* {
+html * {
   font-family: "adobe-garamond-pro", serif;
+  font-size: medium;
 }
 
 a {
@@ -58,16 +59,12 @@ html, body {
 body {
     background-color: white;
     color: black;
-    font-family: "adobe-garamond-pro", serif;
-    font-size: 1.5em;
     line-height: 1.5; 
   }
   
 /* Headings styles */
 h2, h3, h4, h5, h6 {
 background-color: rgba(220, 221, 222, 1);
-font-family: "adobe-garamond-pro", serif;
-font-size: 1.5em;
 line-height: 1.2;
 color: black;
 text-indent: 20px;
@@ -75,8 +72,7 @@ text-indent: 20px;
   
 h1{
 text-align: center;
-font-family: "adobe-garamond-pro", serif;
-font-size: 2em;
+font-size: xx-large;
 line-height: 1.2;
 }
 /* Form styles */
