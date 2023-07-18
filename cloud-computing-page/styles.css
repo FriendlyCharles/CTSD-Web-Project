@@ -48,3 +48,12 @@ li .classlinks {
   border: none;
   cursor: pointer;
 }
+
+/* Contols the color of the links in the AWS section. */
+.awsLink {
+  color: #bf311a;
+}
+/* Controls the color of the link in the AWS section when the user hovers over the link. */
+.awsLink:hover {
+  color: #fdb913;
+}
