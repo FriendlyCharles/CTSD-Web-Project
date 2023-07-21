@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Information Request Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../../assets/images/VC-Primary-Coated-4c.jpg" width="300px">
+            <span>Information Request Form</span>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="navbar-container">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="https://catalog.valenciacollege.edu/degrees/bachelorofscience/computingtechnologyandsoftwaredesign/"
+                        target="_blank"
+                        >Valencia BAS</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/CTSD-Web-Project\index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://catalog.valenciacollege.edu/degrees/bachelorofscience/computingtechnologyandsoftwaredesign/#programrequirementstext" target="_blank">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://valenciacollege.edu/future-students/" target="_blank">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/CTSD-Web-Project\cloud-computing\information-request-form\information-request-form.html" target="_blank">Contact</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="form-container">
+        <h1>Information Request 
+            <span class="ms-2">
+                <img src="../../assets/icons/32px-Infobox_info_icon.svg.png" 
+                    alt="tooltip-icon" 
+                    data-bs-toggle="tooltip" 
+                    data-bs-placement="top"
+                    title="Please fill out your contact using the form.
+                    The information will automatically be sent to Dr. Macon after clicking submit.
+                    Expect up to 3-5 business days to receive further information on the program."
+                >
+            </span>
+            <script>
+                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                    return new bootstrap.Tooltip(tooltipTriggerEl)
+                })
+            </script>
+        </h1>
+        <form method="post" action="send.php">
+            <div class="form-group">
+                <label for="firstName">First Name <span style="color: red">*</span></label>
+                <input type="text" id="firstName" name="firstName" maxlength="35" pattern="[A-Za-z]+" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name <span style="color: red">*</span></label>
+                <input type="text" id="lastName" name="lastName" maxlength="35" pattern="[A-Za-z]+" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address <span style="color: red">*</span></label>
+                <input type="email" id="email" name="email" pattern="^(\D)+(\w)*((\.(\w)+)?)+@(\D)+(\w)*((\.(\D)+(\w)*)+)?(\.)[a-z]{2,}$" required>
+                <span style="font-size: 12px; color: gray;">example@mail.com</span>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Preferred Phone Number <span style="color: red">*</span></label>
+                <input type="text" id="phoneNumber" name="phoneNumber" minlength="10" maxlength="10" pattern="[0-9]+" required>
+            </div>
+            <div class="form-group">
+                <label for="schoolYear">Year of Study <span style="color: red">*</span></label>
+                <select id="schoolYear" name="schoolYear" required>
+                    <option value="" disabled selected>Please select...</option>
+                    <option value="Freshman">Freshman</option>
+                    <option value="Sophomore">Sophomore</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Senior">Senior</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <!-- https://catalog.valenciacollege.edu/degrees/associateinarts/degreepathways/ -->
+                <label for="degreePath">Degree Pathway <span style="color: red">*</span></label>
+                <select id="degreePath" name="degreePath" size="4" selected="false" required>
+                    <option value="Accounting">Accounting</option>
+                    <option value="Advertising/Public Relations">Advertising/Public Relations</option>
+                    <option value="Architecture">Architecture</option>
+                    <option value="Art, Studio/Fine Art">Art, Studio/Fine Art</option>
+                    <option value="Biology">Biology</option>
+                    <option value="Biomedical Science">Biomedical Science</option>
+                    <option value="Business">Business</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Communication">Communication</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Criminal Justice">Criminal Justice</option>
+                    <option value="Dance Performance">Dance Performance</option>
+                    <option value="Dietetics (UF CALS)">Dietetics (UF CALS)</option>
+                    <option value="Digital Media">Digital Media</option>
+                    <option value="Early Childhood Education">Early Childhood Education</option>
+                    <option value="Economics">Economics</option>
+                    <option value="Elementary Education">Elementary Education</option>
+                    <option value="Emerging Media">Emerging Media</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="English">English</option>
+                    <option value="Environmental Management (UF CALS)">Environmental Management (UF CALS)</option>
+                    <option value="Environmental Studies">Environmental Studies</option>
+                    <option value="Exploratory">Exploratory</option>
+                    <option value="Film">Film</option>
+                    <option value="Food Science (UF CALS)">Food Science (UF CALS)</option>
+                    <option value="Health Informatics and Information Management">Health Informatics and Information Management</option>
+                    <option value="History">History</option>
+                    <option value="Horticultural Science">Horticultural Science</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Journalism">Journalism</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Music Performance">Music Performance</option>
+                    <option value="Natural Resource Conversation (UF CALS)">Natural Resource Conversation (UF CALS)</option>
+                    <option value="Nutritional Sciences (UF CALS)">Nutritional Sciences (UF CALS)</option>
+                    <option value="Philosophy">Philosophy</option>
+                    <option value="Physical Education">Physical Education</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Plant Science (UF CALS)">Plant Science (UF CALS)</option>
+                    <option value="Political Science">Political Science</option>
+                    <option value="Psychology">Psychology</option>
+                    <option value="Public Administration">Public Administration</option>
+                    <option value="Secondary Education">Secondary Education</option>
+                    <option value="Sign Language Interpretation">Sign Language Interpretation</option>
+                    <option value="Social Sciences">Social Sciences</option>
+                    <option value="Social Work">Social Work</option>
+                    <option value="Sociology">Sociology</option>
+                    <option value="Statistics">Statistics</option>
+                    <option value="Theatre">Theatre</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="desiredOutcome">Desired Outcome or Job</label>
+                <input type="text" id="desiredOutcome" name="desiredOutcome">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-column">
+            <p>
+                Valencia College provides equal opportunity for educational opportunities and employment to all.
+                Contact the <a href="https://valenciacollege.edu/employees/human-resources/" target="_blank">Office of Organizational Development and Human Resources</a> for information.
+            </p>
+        </div>
+        <div class="footer-column2">
+            <p>
+                P.O. Box 3028, Orlando, Florida 32802<br>
+                407-299-5000<br>
+                <a href="https://a.cms.omniupdate.com/11/?skin=oucampus&account=valenciacollege&site=Valencia_College_Production&action=de&path=/admissions/apply.pcf" target="_blank">&copy; 2023 Valencia College</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
